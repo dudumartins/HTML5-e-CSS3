@@ -1,0 +1,102 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Meow+Script&display=swap');
+
+:root {
+    --font1:Verdana, Geneva, Tahoma, sans-serif;
+    --font2: 'Passion One', cursive;
+    --font3: 'Meow Script', cursive;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-size: 1em;
+}
+
+html, body {
+    min-height: 10vh;
+    background-color: #a9a9a9;
+    font-family: var(--font1);
+}
+
+header {
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+}
+
+header > h1 {
+    padding-top: 50px;
+    font-variant: small-caps;
+    font-family: var(--font2);
+    font-size: 10vw;
+}
+
+header > p {
+    padding-bottom: 50px;
+}
+
+section {
+    max-width: 1000px;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+    font-family: var(--font3);
+    font-size: 3.7vw;
+    margin: auto;
+}
+
+section > p {
+    padding-bottom: 2em;
+}
+
+section.normal {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+section.imagem {
+    background-color: #333333;
+    color: #ffffff;
+    box-shadow: inset 6px 6px 13px 0px #00000079;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section.imagem > p {
+    display: inline-block;
+    background-color: #0000008a;
+    padding: 5px;
+    text-shadow: 1px 1px #000000;
+}
+
+section#img01 {
+    background-image: url('../imagens/background001.jpg');
+    background-position: right center;
+}
+
+section#img02 {
+    background-image: url('../imagens/background002.jpg');
+    background-position: right center;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+}
